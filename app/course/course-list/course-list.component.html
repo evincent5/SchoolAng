@@ -1,0 +1,61 @@
+<table class="table table-striped">
+    <tr>
+        <th>
+            Id
+        </th>
+        <th>
+            Course Title
+        </th>
+        <th>
+            Time
+        </th>
+        <th>
+           Day
+        </th>
+        <th>
+            Fee
+        </th>
+        <th>
+            Level
+        </th>
+        <th>
+            Professor
+        </th>
+        <th>
+            Core Course
+        </th>
+        <th></th>
+
+    </tr>
+        <tr *ngFor="let course of courseList">
+            <td>
+                {{course.Id}}
+            </td>
+
+            <td>
+                {{course.CourseTitle}}
+            </td>
+            <td>
+                {{course.CourseTime | date: 'shortTime' }}
+            </td>
+            <td>
+                {{course.CourseDay}}
+            </td>
+            <td>
+                {{course.CourseFee | currency:'USD':true}}
+            </td>
+            <td>
+                {{course.Level}}
+            </td>
+            <td>
+                {{course.Professor}}
+            </td>
+            <td>
+                {{course.CoreCourse}}
+            </td>
+            <td>
+                <a [routerLink]="[course.Id]" href="" class="btn btn-primary">Detail</a>
+            </td>
+        </tr>
+        
+

@@ -1,0 +1,73 @@
+           <h2>Details</h2>
+
+<ng-container *ngIf="requestDetail">
+    First Name:   {{requestDetail.FirstName}}<br/>
+    Last Name:    {{requestDetail.LastName}}<br/>
+    Phone Number: {{requestDetail.PhoneNumber}}<br/>
+    City:         {{requestDetail.City}}<br/>
+    Email Address: {{requestDetail.EmailAddress}}<br/>
+    State:         {{requestDetail.StateName}}<br/>
+
+</ng-container>
+
+
+<!--<ng-template [ngIf]="requestDetail">
+    First Name: {{requestDetail.FirstName}}<br/>
+    Last Name: {{requestDetail.LastName}}<br/>
+    Phone Number: {{requestDetail.PhoneNumber}}<br/>
+    City: {{requestDetail.City}}<br/>
+    Email Address: {{requestDetail.EmailAddress}}<br/>
+    State: {{requestDetail.StateName}}<br/>
+</ng-template>           -->
+
+<!--<table class="table table-striped"  >
+
+    <tr>
+        <th>
+            Id
+        </th>
+        <th>
+            First Name
+        </th>
+        <th>
+            Last Name
+        </th>
+        <th>
+           Phone Number
+        </th>
+        <th>
+            City
+        </th>
+        <th>
+            Email Address
+        </th>
+        <th>
+            State
+        </th>
+        <th>
+        </th>
+    </tr>
+        <tr *ngIf="requestDetail">
+            <td>
+                {{requestDetail.Id}}
+            </td>
+
+            <td>
+                {{requestDetail.FirstName}}
+            </td>
+            <td>
+                {{requestDetail.LastName}}
+            </td>
+            <td>
+                {{requestDetail.PhoneNumber}}
+            </td>
+            <td>
+                {{requestDetail.City}}
+            </td>
+            <td>
+                {{requestDetail.EmailAddress}}
+            </td>
+            <td>
+                {{requestDetail.StateName}}
+            </td>
+        </tr>-->

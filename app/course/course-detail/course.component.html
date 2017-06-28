@@ -1,0 +1,74 @@
+           <!--<h2>Details</h2>
+           <div *ngIf="courseDetail">
+                {{courseDetail.Id}}
+                {{courseDetail.CourseTitle}}
+                {{courseDetail.CourseTime}}
+                {{courseDetail.CourseDay}}
+                {{courseDetail.CourseFee}}
+                {{courseDetail.Level}}
+                {{courseDetail.Professor}}
+                {{courseDetail.CoreCourse}}
+           </div>
+-->
+
+    <div  *ngIf="courseDetail">
+    <h4>Details</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+                CourseTitle
+        </dt>
+
+        <dd>
+                {{courseDetail.CourseTitle}}
+        </dd>
+
+        <dt>
+                CourseTime
+        </dt>
+
+        <dd>
+                {{courseDetail.CourseTime}}
+        </dd>
+
+        <dt>
+                CourseDay
+        </dt>
+
+        <dd>
+                {{courseDetail.CourseDay}}
+        </dd>
+
+        <dt>
+                CourseFee
+        </dt>
+
+        <dd>
+                {{courseDetail.CourseFee | currency:'USD':true}}
+        </dd>
+
+        <dt>
+                Level
+        </dt>
+
+        <dd>
+                {{courseDetail.Level}}
+        </dd>
+
+        <dt>
+                Professor
+        </dt>
+
+        <dd>
+                {{courseDetail.Professor}}
+        </dd>
+        <dt>
+                CoreCourse
+        </dt>
+
+        <dd>
+                {{courseDetail.CoreCourse}}
+        </dd>
+
+    </dl>
+</div>

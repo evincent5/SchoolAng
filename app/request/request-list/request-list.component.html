@@ -1,0 +1,60 @@
+
+<table class="table table-striped" >
+    <tr>
+        <th>
+            Id
+        </th>
+        <th>
+            First Name
+        </th>
+        <th>
+            Last Name
+        </th>
+        <th>
+           Phone Number
+        </th>
+        <th>
+            City
+        </th>
+        <th>
+            Email Address
+        </th>
+        <th>
+            State
+        </th>
+        <th></th>
+        <th></th>
+
+        
+    </tr>
+        <tr *ngFor="let request of requestList">
+            <td>
+                {{request.Id}}
+            </td>
+
+            <td>
+                {{request.FirstName}}
+            </td>
+            <td>
+                {{request.LastName}}
+            </td>
+            <td>
+                {{request.PhoneNumber}}
+            </td>
+            <td>
+                {{request.City}}
+            </td>
+            <td>
+                {{request.EmailAddress}}
+            </td>
+            <td>
+                {{request.StateName}}
+            </td>
+            <td >
+                <a [routerLink]="[request.Id]" href="" class="btn btn-primary">Detail</a>
+            </td>
+            <!--<td >
+                <a [routerLink]="[request.Id]" href="" class="btn btn-primary">Edit</a>
+            </td>-->
+
+        </tr>
